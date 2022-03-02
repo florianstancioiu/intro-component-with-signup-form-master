@@ -75,7 +75,7 @@ input::placeholder {
     color: #6a6a6c;
 }
 
-.form .error {
+.form .input-wrapper .error {
     display: none;
     font-weight: 400;
     font-style: italic;
@@ -83,6 +83,14 @@ input::placeholder {
     text-align: right;
     color: hsl(0, 100%, 74%);
     margin-top: 10px;
+}
+
+.form .input-wrapper.error .error {
+    display: block;
+}
+
+.form .input-wrapper.error input {
+    border: 2px solid hsl(0, 100%, 74%);
 }
 
 .form {
