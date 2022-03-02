@@ -93,6 +93,21 @@ input::placeholder {
     border: 2px solid hsl(0, 100%, 74%);
 }
 
+.form .input-wrapper.error {
+    position: relative;
+}
+
+.form .input-wrapper.error::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/icon-error.svg');
+    position: absolute;
+    top: 16px;
+    right: 26px;
+}
+
 .form {
     margin-bottom: 68px;
     position: relative;
