@@ -60,6 +60,13 @@ body {
     margin-bottom: 0;
 }
 
+.input-wrapper input:active,
+.input-wrapper input:focus-visible,
+.input-wrapper input:focus {
+    border: 1px solid #605b79;
+    color: #434247;
+}
+
 .input-wrapper {
     margin-bottom: 17px;
 }
@@ -114,4 +121,56 @@ input::placeholder {
     text-align: center;
     font-size: 13px;
     margin-bottom: 0;
+}
+
+@media screen and (min-width: 1119px) {
+    body {
+        background-image: url('../images/bg-intro-desktop.png');
+        padding: 0;
+    }
+
+    main {
+        width: 1118px;
+        margin: 120px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-wrapper {
+        width: 542px;
+    }
+
+    .hero {
+        width: 500px;
+    }
+
+    .form {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        text-align: left;
+        font-size: 47px;
+        margin-top: 176px;
+        line-height: 50px;
+    }
+
+    .hero .description {
+        text-align: left;
+    }
+
+    .input-wrapper input,
+    .input-wrapper input::placeholder {
+        font-weight: 600;
+    }
+
+    .free-message {
+        margin-bottom: 20px;
+        padding: 20px 44px 21px;
+    }
+
+    .terms-and-services {
+        font-size: 11px;
+        margin-top: 20px;
+    }
 }
